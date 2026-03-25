@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/e317314df4.js" crossorigin="anonymous"></script>
+    <!--FONT INTER-->
+    <link rel="stylesheet" href="./assets/fonts/inter/inter.css">
+    <!--ÍCONO-->
+    <link rel="icon" type="image/png" href="./assets/img/tab_icon.png">
+    <!--PRIORIDAD IMAGEN DE FONDO-->
+    <link rel="preload" as="image" href="./assets/img/fondo.jpg">
+    <!--RESET CSS-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Portafolio - Karina Ramos</title>
+</head>
+<body>
+    <!--Layout principal-->
+    <div class="layout">
+        <!--Barra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Información general-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="./assets/img/foto_perfil.png" alt="Foto de perfil Karina Ramos" class="user-info__image">
+                    </div>
+                    <h2 class="user-info__name">Karina Ramos</h2>
+                    <h4 class="user-info__job">Desarrolladora Web</h4>
+                </div>
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mí</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="conocimientos.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Conocimientos</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Proyectos</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Links a redes-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://github.com/Karina-Alejandra-KR" class="social__link" target="_blank" rel="noopener noreferrer">
+                                <i class=" social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://stackoverflow.com/users/32415203/karina-ramos" class="social__link" target="_blank" rel="noopener noreferrer">
+                                <i class=" social__icon fa-brands fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Botón de CV-->
+                <div class="user-info__buttons">
+                    <a href="./assets/documents/CV - Karina Ramos.pdf" class="user-info__btn" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                </div>
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2026 Karina Ramos
+                </footer>
+            </section>
+        </aside>
+
+        <!--Contenido principal-->
+        <main class="layout__content">
+            <section class="content__page content__about">
+                <header class="about__header">
+                    <h1 class="about__title">
+                        Sobre <span class="title__color">Mí</span>
+                    </h1>
+                </header>
+
+                <section class="about__personal-info">
+                    <article class="personal-info__bio">
+                        <p class="personal-info__description">
+                            Entusiasta del mundo digital y la tecnología💜💻. Ingeniera industrial con experiencia en gestión empresarial, incluyendo E-Commerce, donde nació mi interés por el desarrollo web. Mi enfoque siempre ha sido mejorar la experiencia del usuario, descubriendo el impacto del diseño y la funcionalidad en plataformas digitales. Hoy continúo enfocada en la mejora de procesos y busco una oportunidad para iniciar mi camino como desarrolladora web full-stack, creando soluciones desde cero.
+                        </p>
+                    </article>
+                </section>
+
+                <section class="about__services">
+                    <header class="services__header">
+                        <h2 class="services__title">
+                            Lo que <span class="title__color">practico</span>
+                        </h2>
+                    </header>
+                    <div class="services__container">
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="service__real-icon fa-solid fa-code"></i>
+                            </div>
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    Front-End y Back-End
+                                </h3>
+                                <p class="service__description">
+                                    Estoy comenzando a desarrollar creando interfaces con HTML, CSS, Bootstrap y JavaScript. También estoy aprendiendo a trabajar con React, Node.js y PostgreSQL para construir proyectos más completos. Uso Git y GitHub para gestionar mis proyectos.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="service__real-icon fa-solid fa-object-group"></i>
+                            </div>
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    UX/UI
+                                </h3>
+                                <p class="service__description">
+                                    Me interesa diseñar interfaces simples y funcionales, creando prototipos en Figma y Canva y organizando ideas mediante diagramas. Busco que mis proyectos sean claros, intuitivos y enfocados en una buena experiencia de usuario.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
