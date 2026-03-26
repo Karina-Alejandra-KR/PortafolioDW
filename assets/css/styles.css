@@ -247,7 +247,8 @@ body::before{
     color: var(--color-icon);
     transition: al 300ms ease-in-out;
 }
-.menu__option:hover .menu__icon{
+.menu__option:hover .menu__icon,
+.menu__link--active .menu__icon{
     color: var(--color-blue);
 }
 .menu__overlay{
