@@ -15,7 +15,8 @@
 }
 /*ESTILOS GENERALES*/
 html{
-    font-size: 10px;
+    font-size: 62.5%;
+
 }
 body{
     width: 100%;
@@ -558,4 +559,74 @@ body::before{
 }
 .skills__percentage--p8{
     width: 80%;
+}
+/*PROYECTOS*/
+.content__projects{
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 4rem;
+    padding-left: 5rem;
+    overflow: auto;
+}
+.projects__header{
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+.projects__title{
+    font-size: 3.2rem;
+    position: relative;
+}
+.projects__description{
+    text-align: center;
+}
+.projects__title::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-white), var(--color-white) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    z-index: 0;
+    opacity: 0.5;
+}
+.projects__gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery__item{
+    flex-basis: 26%;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery__container-image{
+    width: 160px;
+    height: 136px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 300ms ease-in-out;
+}
+.gallery__image{
+    width: 160px;
+    height: 136px;
+} 
+.gallery__item:hover .gallery__container-image{
+    transform: scale(1.1);
+}
+.gallery__title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.projects__description{
+    margin-top: -10px;
+    margin-bottom: 10px;
 }

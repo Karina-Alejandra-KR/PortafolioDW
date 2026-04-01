@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/e317314df4.js" crossorigin="anonymous"></script>
+    <!--FONT INTER-->
+    <link rel="stylesheet" href="./assets/fonts/inter/inter.css">
+    <!--ÍCONO-->
+    <link rel="icon" type="image/png" href="./assets/img/tab_icon.png">
+    <!--PRIORIDAD IMAGEN DE FONDO-->
+    <link rel="preload" as="image" href="./assets/img/fondo.jpg">
+    <!--RESET CSS-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Portafolio - Karina Ramos</title>
+</head>
+<body>
+    <!--Layout principal-->
+    <div class="layout">
+        <!--Barra lateral-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Información general-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="./assets/img/foto_perfil.png" alt="Foto de perfil Karina Ramos" class="user-info__image">
+                    </div>
+                    <h2 class="user-info__name">Karina Ramos</h2>
+                    <h4 class="user-info__job">Desarrolladora Web</h4>
+                </div>
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mí</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="carrera.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Carrera</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="proyectos.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Proyectos</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Links a redes-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://github.com/Karina-Alejandra-KR" class="social__link" target="_blank" rel="noopener noreferrer">
+                                <i class=" social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://stackoverflow.com/users/32415203/karina-ramos" class="social__link" target="_blank" rel="noopener noreferrer">
+                                <i class=" social__icon fa-brands fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Botón de CV-->
+                <div class="user-info__buttons">
+                    <a href="./assets/documents/CV - Karina Ramos.pdf" class="user-info__btn" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                </div>
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2026 Karina Ramos
+                </footer>
+            </section>
+        </aside>
+
+        <!--Contenido principal-->
+        <main class="layout__content">
+            <section class="content__page content__projects">
+                <header class="projects__header">
+                    <h1 class="projects__title">
+                        Proyectos
+                    </h1>
+                </header>
+
+                <p class="projects__description">Mis principales <span class="subtitle__color">proyectos</span>, base de mi aprendizaje y crecimiento en desarrollo.</p>
+
+                <section class="projects__gallery">
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/HogwartsForm/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_1.png" alt="Portada de proyecto Hogwarts Form" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            Hogwarts Form
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/CoffeeAndCake/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_2.png" alt="Portada de proyecto Coffee And Cake" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            Coffee And Cake
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/calculadora/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_3.png" alt="Portada de proyecto Calculadora" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            Calculadora
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/Infinity80-s/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_4.jpg" alt="Portada de proyecto Infinity 80's" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            Infinity 80's
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/ToDoList/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_5.png" alt="Portada de proyecto To Do List" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            To Do List
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <div class="gallery__container-image">
+                            <a href="https://karina-alejandra-kr.github.io/Cofi/" target="_blank" rel="noopener noreferrer" class="gallery__link">
+                                <img src="./assets/img/gallery_image_6.png" alt="Portada de proyecto Cofi" class="gallery__image">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__title">
+                            Cofi
+                        </figcaption>
+                    </figure>
+                </section>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
