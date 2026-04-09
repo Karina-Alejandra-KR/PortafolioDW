@@ -2,6 +2,7 @@
 :root{
     --color-principal: #000513;
     --color-secondary: #180723;
+    --color-secondary-alert: #20113d;
     --color-background: #000612;
     --color-transparent: transparent;
     --color-icon: #8B8B8B;
@@ -9,9 +10,11 @@
     --color-subtitle:#8B8B8B;
     --color-text: #f5f5f5;
     --color-blue: #63D8EE;
+    --color-blue-alert: #60b8dd;
     --color-white: #f5f5f5;
     --color-grey: #8B8B8B;
     --color-pink: #A396D2;
+    --color-pink-input: #e8e5fa;
 }
 /*ESTILOS GENERALES*/
 html{
@@ -629,4 +632,224 @@ body::before{
 .projects__description{
     margin-top: -10px;
     margin-bottom: 10px;
+}
+/*CONTACTO*/
+.content__contact{
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 4rem;
+    padding-left: 5rem;
+    overflow: auto;
+}
+.contact__header{
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+.contact__title{
+    font-size: 3.2rem;
+    position: relative;
+}
+.contact__title::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-white), var(--color-white) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    z-index: 0;
+    opacity: 0.5;
+}
+.contact__container{
+    display: flex;
+    flex-direction: row;
+}
+.contact__info{
+    flex-basis: 33%;
+    margin-top: 10rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__data{
+    width: 50%;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color-secondary);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+.contact__data:hover .contact__icon{
+    transform: scale(1.2);
+}
+.contact__icon{
+    font-size: 4rem;
+    color: var(--color-blue);
+    transition: transform 300ms ease, color 300ms ease;
+}
+.contact__form-box{
+    flex-basis: 66%;
+    padding: 0 1.5rem;
+    margin-top: -2rem;
+}
+.contact__form-header{
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2.2rem;
+    position: relative;
+}
+.form-header__title{
+    font-size: 2.1rem;
+}
+.form-header__title::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: -1px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-white), var(--color-white) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    z-index: 0;
+    opacity: 0.5;
+}
+.form__container{
+    display: flex;
+    flex-direction: row;
+}
+.form__left{
+    flex-basis: 47%;
+    margin-right: 1.5rem;
+}
+.form__group{
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.form__input{
+    position: relative;
+    width: 100%;
+    height: 4.2rem;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    border: 0.2rem solid var(--color-grey);
+    border-radius: 0.5rem;
+    outline: none;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
+    background-color: var(--color-pink-input);
+    color: var(--color-secondary);
+    line-height: 2.1rem;
+}
+.form__input:focus{
+    border: 0.2rem solid var(--color-blue);
+}
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label{
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.form__input::-webkit-input-placeholder{
+    color: transparent;
+}
+.form__input::-moz-placeholder{
+    color: transparent;
+}
+.form__label{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 1;
+    color: var(--color-grey);
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+}
+.form__right{
+    flex-basis: 50%;
+    max-width: 50%;
+    max-height: 100%;
+}
+.form__group--textarea{
+    height: 100%;
+}
+.form__input--textarea{
+    display: block;
+    resize: none;
+    height: 87.5%;
+}
+.form__button{
+    padding: 1rem 3rem;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-pink);
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.form__button:hover{
+    background-color: var(--color-pink);
+    color: var(--color-secondary);
+}
+.contact__map{
+    width: 100%;
+    min-height: 13rem;
+    overflow: hidden;
+}
+.contact__iframe{
+    width: 100%;
+    height: 12rem;
+    border-radius: 1.5rem;
+}
+/*ENVÍO DE FORMULARIO*/
+.hidden {
+    display: none;
+}
+#customAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.alert-box {
+    background-color: var(--color-blue-alert);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 15px var(--color-blue-alert);
+}
+.alert-box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#closeAlert {
+    padding: 10px 20px;
+    background-color: var(--color-secondary-alert);
+    color: var(--color-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px var(--color-secondary-alert), 
+    0 0 25px var(--color-secondary-alert);
 }
