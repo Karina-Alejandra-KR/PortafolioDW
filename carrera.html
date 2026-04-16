@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/e317314df4.js" crossorigin="anonymous"></script>
     <!--FONT INTER-->
@@ -13,8 +13,14 @@
     <link rel="preload" as="image" href="./assets/img/fondo.jpg">
     <!--RESET CSS-->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--SCROLL CSS-->
+    <link rel="stylesheet" href="./assets/css/scroll.css">
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--CSS RESPONSIVE-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!--SCRIPT MENÚ-->
+    <script src="assets/js/menu.js" defer></script>
     <title>Portafolio - Karina Ramos</title>
 </head>
 <body>
@@ -92,6 +98,12 @@
             </section>
         </aside>
 
+        <!--Menú responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
         <!--Contenido principal-->
         <main class="layout__content">
             <section class="content__page content__resume">
@@ -167,7 +179,7 @@
 
                     <section class="resume__right">
                         <header class="resume__subheader">
-                            <h2 class="resume__subtitle"><span class="subtitle__color">Tecnologías</span> aprendidas</h2>
+                            <h2 class="resume__subtitle"><span class="subtitle__color">Tecnologías</span></h2>
                         </header>
                         <div class="resume__skills">
                             <article class="skills__title">
